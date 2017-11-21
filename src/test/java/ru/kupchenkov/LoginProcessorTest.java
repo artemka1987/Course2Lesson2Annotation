@@ -18,7 +18,7 @@ public class LoginProcessorTest {
     }
 
     @Test
-    public void testStartProcess_invalidParams_throwNoSuchFieldException() throws NoSuchFieldException, IllegalAccessException {
+    public void testStartProcess_invalidParams_throwIllegalArgumentException() throws NoSuchFieldException, IllegalAccessException {
         LoginExample loginExample = null;
         assertThrows(IllegalArgumentException.class, () ->{
             LoginProcessor.startProcess(loginExample);
